@@ -1,0 +1,760 @@
+{
+    "container_id": "328776fafdc92221acee4f4a5a2d6a117ee15b7856f610626286b061361acd13",
+    "buildid": "20211105.5",
+    "region": "us-west-1",
+    "container_name": "/ecs-email-risk-score-688-email-risk-score-eeaed1d6cacbd8d08b01",
+    "source": "stdout",
+    "log": {
+        "@t": "2021-11-10T12:12:38.1529616Z",
+        "@mt": "{@Message}",
+        "Message": {
+            "id": "6cfbace6-636d-4a3e-b0de-98c119a755be",
+            "sla": "950",
+            "from": "2021-11-10 12:12:32 261",
+            "to": "2021-11-10 12:12:33 148",
+            "departmentid": "410004640",
+            "companyid": "410003740",
+            "qf": "REST",
+            "cid": "410019157",
+            "cip": "198.241.206.21",
+            "query": "PII@PII.com",
+            "method": "POST",
+            "request": "POST https://api.emailage.com/emailagevalidator/?format=json",
+            "querystream": "PII",
+            "qc": "1",
+            "response": "success-0",
+            "total": {
+                "s": "0",
+                "e": "887",
+                "d": "887"
+            },
+            "auth": {
+                "s": "2",
+                "e": "2",
+                "d": "0",
+                "oaclient": {
+                    "s": "2",
+                    "e": "2",
+                    "d": "0"
+                },
+                "oas": {
+                    "s": "2",
+                    "e": "2",
+                    "d": "0"
+                }
+            },
+            "clientinfo": {
+                "s": "2",
+                "e": "3",
+                "d": "1",
+                "buildclient": {
+                    "s": "2",
+                    "e": "2",
+                    "d": "0"
+                },
+                "getcompany": {
+                    "s": "2",
+                    "e": "3",
+                    "d": "1"
+                }
+            },
+            "partnerinfo": {
+                "s": "3",
+                "e": "4",
+                "d": "1",
+                "customeridentifier": {
+                    "s": "3",
+                    "e": "4",
+                    "d": "1",
+                    "ispartnercompany": {
+                        "s": "3",
+                        "e": "3",
+                        "d": "0"
+                    },
+                    "getfinalclient": {
+                        "s": "3",
+                        "e": "4",
+                        "d": "1"
+                    },
+                    "oas": {
+                        "s": "4",
+                        "e": "0",
+                        "d": "-1",
+                        "getemailageconsumerstatistics": {
+                            "s": "4",
+                            "e": "4",
+                            "d": "0"
+                        },
+                        "consumerinfomerge": {
+                            "s": "4",
+                            "e": "4",
+                            "d": "0"
+                        }
+                    }
+                },
+                "getcompany": {
+                    "s": "4",
+                    "e": "4",
+                    "d": "0"
+                }
+            },
+            "core": {
+                "query": "PII",
+                "s": "4",
+                "e": "886",
+                "d": "882",
+                "email": {
+                    "ds": "[2,504,2102]",
+                    "ds_paid": "[]",
+                    "pkip": "0",
+                    "pk": "0",
+                    "s": "4",
+                    "e": "886",
+                    "d": "882",
+                    "taskdummyemailend": {
+                        "s": "4",
+                        "e": "36",
+                        "d": "32"
+                    },
+                    "getds": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "getsla": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "getprice": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "getanonymousquery": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "getregionalizationzone": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "getdecouplinghours": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "getcustomriskband": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "getcustomfraudscore": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "isallowemailcache": {
+                        "s": "4",
+                        "e": "4",
+                        "d": "0"
+                    },
+                    "getreselleremails": {
+                        "s": "4",
+                        "e": "36",
+                        "d": "32"
+                    },
+                    "mailservers": {
+                        "s": "36",
+                        "e": "358",
+                        "d": "322",
+                        "cacheread": {
+                            "s": "36",
+                            "e": "37",
+                            "d": "1"
+                        },
+                        "dns": {
+                            "s": "37",
+                            "e": "356",
+                            "d": "319"
+                        },
+                        "cachesave": {
+                            "s": "356",
+                            "e": "358",
+                            "d": "2"
+                        }
+                    },
+                    "emailagedata": {
+                        "s": "37",
+                        "e": "154",
+                        "d": "117",
+                        "emailcache": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "emailfraud": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "emailcatalog": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "phone": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "socialmedia": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "smtpserver": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "dis": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "supernodes": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "domaininfo": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "ehbm": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        },
+                        "ccpaoptoutcheck": {
+                            "s": "38",
+                            "e": "154",
+                            "d": "116"
+                        }
+                    },
+                    "cardinalvetonly": {
+                        "s": "37",
+                        "e": "44",
+                        "d": "7"
+                    },
+                    "validemail": {
+                        "s": "37",
+                        "e": "861",
+                        "d": "824"
+                    },
+                    "cardinalvetonlytaskwait": {
+                        "s": "38",
+                        "e": "44",
+                        "d": "6"
+                    },
+                    "assistret": {
+                        "s": "41",
+                        "e": "47",
+                        "d": "6",
+                        "assist": {
+                            "s": "41",
+                            "e": "47",
+                            "d": "6",
+                            "getdomainfactor": {
+                                "s": "41",
+                                "e": "43",
+                                "d": "2"
+                            },
+                            "getriskprofileshipaddress": {
+                                "s": "45",
+                                "e": "45",
+                                "d": "0"
+                            },
+                            "getriskprofiledomain": {
+                                "s": "45",
+                                "e": "46",
+                                "d": "1"
+                            },
+                            "getriskprofilephone": {
+                                "s": "46",
+                                "e": "46",
+                                "d": "0"
+                            },
+                            "getriskprofilebilladdress": {
+                                "s": "46",
+                                "e": "47",
+                                "d": "1"
+                            },
+                            "getriskprofilecustomerid": {
+                                "s": "47",
+                                "e": "47",
+                                "d": "0"
+                            },
+                            "getriskprofileservicelocation": {
+                                "s": "47",
+                                "e": "47",
+                                "d": "0"
+                            },
+                            "initcustomfields": {
+                                "s": "47",
+                                "e": "47",
+                                "d": "0"
+                            }
+                        }
+                    },
+                    "waittask": {
+                        "s": "41",
+                        "e": "861",
+                        "d": "820"
+                    },
+                    "emailtaskphone": {
+                        "s": "88",
+                        "e": "154",
+                        "d": "66"
+                    },
+                    "innervalidemail": {
+                        "s": "154",
+                        "e": "861",
+                        "d": "707",
+                        "getsuffixrules": {
+                            "s": "154",
+                            "e": "154",
+                            "d": "0"
+                        },
+                        "getersemailaddressparse": {
+                            "s": "154",
+                            "e": "154",
+                            "d": "0"
+                        }
+                    },
+                    "mailserversriskprofiles": {
+                        "s": "358",
+                        "e": "377",
+                        "d": "19"
+                    },
+                    "domainrule": {
+                        "s": "861",
+                        "e": "861",
+                        "d": "0"
+                    },
+                    "cardinalfulltaskwait": {
+                        "s": "861",
+                        "e": "876",
+                        "d": "15"
+                    },
+                    "cardinalfull": {
+                        "s": "861",
+                        "e": "876",
+                        "d": "15"
+                    },
+                    "assisthits": {
+                        "s": "876",
+                        "e": "876",
+                        "d": "0"
+                    },
+                    "emailcache": {
+                        "s": "876",
+                        "e": "876",
+                        "d": "0"
+                    },
+                    "domainrisk": {
+                        "s": "876",
+                        "e": "877",
+                        "d": "1"
+                    },
+                    "predefcname": {
+                        "s": "877",
+                        "e": "877",
+                        "d": "0"
+                    },
+                    "customfields": {
+                        "s": "877",
+                        "e": "877",
+                        "d": "0",
+                        "custommiscquery": {
+                            "s": "877",
+                            "e": "877",
+                            "d": "0"
+                        },
+                        "namematch": {
+                            "s": "877",
+                            "e": "877",
+                            "d": "0"
+                        }
+                    },
+                    "ml": {
+                        "s": "877",
+                        "e": "882",
+                        "d": "5",
+                        "mlqueryprep": {
+                            "s": "877",
+                            "e": "878",
+                            "d": "1",
+                            "setmlqueryhistory": {
+                                "s": "877",
+                                "e": "877",
+                                "d": "0"
+                            }
+                        },
+                        "mlactualquery": {
+                            "s": "878",
+                            "e": "882",
+                            "d": "4"
+                        }
+                    },
+                    "eascore": {
+                        "s": "877",
+                        "e": "878",
+                        "d": "1"
+                    },
+                    "imgs": {
+                        "s": "878",
+                        "e": "878",
+                        "d": "0"
+                    },
+                    "formatdob": {
+                        "s": "878",
+                        "e": "878",
+                        "d": "0"
+                    },
+                    "calcost": {
+                        "s": "878",
+                        "e": "878",
+                        "d": "0"
+                    },
+                    "convhis": {
+                        "s": "878",
+                        "e": "878",
+                        "d": "0"
+                    },
+                    "mlwait": {
+                        "s": "878",
+                        "e": "882",
+                        "d": "4"
+                    },
+                    "customscore": {
+                        "s": "882",
+                        "e": "886",
+                        "d": "4",
+                        "calculatecustomrisk": {
+                            "s": "882",
+                            "e": "883",
+                            "d": "1",
+                            "createinput": {
+                                "s": "882",
+                                "e": "883",
+                                "d": "1"
+                            },
+                            "callrulesengine": {
+                                "s": "883",
+                                "e": "883",
+                                "d": "0",
+                                "getinstance": {
+                                    "s": "883",
+                                    "e": "883",
+                                    "d": "0"
+                                },
+                                "executerules": {
+                                    "s": "883",
+                                    "e": "883",
+                                    "d": "0"
+                                }
+                            },
+                            "callgemini": {
+                                "s": "883",
+                                "e": "883",
+                                "d": "0"
+                            },
+                            "compareresults": {
+                                "s": "883",
+                                "e": "883",
+                                "d": "0"
+                            },
+                            "mapoutputre": {
+                                "s": "883",
+                                "e": "883",
+                                "d": "0"
+                            }
+                        },
+                        "populatejournal": {
+                            "s": "883",
+                            "e": "883",
+                            "d": "0"
+                        },
+                        "broadcastjournal": {
+                            "s": "883",
+                            "e": "886",
+                            "d": "3"
+                        },
+                        "getriskbandpredicaterow": {
+                            "s": "886",
+                            "e": "886",
+                            "d": "0"
+                        }
+                    },
+                    "setfullqueryhistory": {
+                        "s": "886",
+                        "e": "886",
+                        "d": "0"
+                    }
+                },
+                "ip": {
+                    "ds": "[2001]",
+                    "ds_paid": "[]",
+                    "s": "41",
+                    "e": "48",
+                    "d": "7",
+                    "getanonymousquery": {
+                        "s": "41",
+                        "e": "41",
+                        "d": "0"
+                    },
+                    "getregionalizationzone": {
+                        "s": "41",
+                        "e": "41",
+                        "d": "0"
+                    },
+                    "iptaskdummy": {
+                        "s": "41",
+                        "e": "43",
+                        "d": "2"
+                    },
+                    "iptaskminfraudinfo": {
+                        "s": "41",
+                        "e": "48",
+                        "d": "7"
+                    },
+                    "ipgeo": {
+                        "s": "41",
+                        "e": "47",
+                        "d": "6"
+                    },
+                    "ipassist": {
+                        "s": "42",
+                        "e": "43",
+                        "d": "1"
+                    },
+                    "iptaskswait": {
+                        "s": "42",
+                        "e": "48",
+                        "d": "6"
+                    },
+                    "ipgeop": {
+                        "s": "47",
+                        "e": "48",
+                        "d": "1"
+                    },
+                    "ipriskcal": {
+                        "s": "48",
+                        "e": "48",
+                        "d": "0"
+                    },
+                    "iptaskswait2": {
+                        "s": "48",
+                        "e": "48",
+                        "d": "0"
+                    }
+                },
+                "phone": {
+                    "src": "external",
+                    "s": "88",
+                    "e": "154",
+                    "d": "66",
+                    "circuit": {
+                        "s": "88",
+                        "e": "154",
+                        "d": "66",
+                        "external": {
+                            "s": "89",
+                            "e": "153",
+                            "d": "64",
+                            "phoneidcontact": {
+                                "s": "89",
+                                "e": "153",
+                                "d": "64"
+                            }
+                        }
+                    }
+                },
+                "domain": {
+                    "s": "154",
+                    "e": "156",
+                    "d": "2",
+                    "smtpserver": {
+                        "s": "154",
+                        "e": "391",
+                        "d": "237",
+                        "nslookup": {
+                            "s": "155",
+                            "e": "389",
+                            "d": "234",
+                            "getmx": {
+                                "s": "155",
+                                "e": "389",
+                                "d": "234"
+                            },
+                            "mxmerge": {
+                                "s": "389",
+                                "e": "389",
+                                "d": "0"
+                            }
+                        }
+                    },
+                    "validdomain": {
+                        "s": "154",
+                        "e": "861",
+                        "d": "707"
+                    },
+                    "whois": {
+                        "s": "155",
+                        "e": "861",
+                        "d": "706"
+                    },
+                    "valdomain": {
+                        "s": "155",
+                        "e": "861",
+                        "d": "706"
+                    },
+                    "external": {
+                        "s": "156",
+                        "e": "861",
+                        "d": "705"
+                    },
+                    "external_real": {
+                        "s": "156",
+                        "e": "1108",
+                        "d": "952"
+                    },
+                    "addcache": {
+                        "s": "861",
+                        "e": "861",
+                        "d": "0"
+                    },
+                    "domaincountry": {
+                        "s": "861",
+                        "e": "861",
+                        "d": "0"
+                    },
+                    "handledomain": {
+                        "s": "861",
+                        "e": "861",
+                        "d": "0"
+                    },
+                    "brdcst": {
+                        "s": "1108",
+                        "e": "1108",
+                        "d": "0"
+                    }
+                },
+                "revalid": {
+                    "rgs": "20210723152259-NULL",
+                    "lv": "20210723152259",
+                    "s": "156",
+                    "e": "156",
+                    "d": "0"
+                },
+                "datasource": {
+                    "s": "156",
+                    "e": "861",
+                    "d": "705",
+                    "tdnenv": {
+                        "s": "156",
+                        "e": "156",
+                        "d": "0"
+                    },
+                    "brnenv": {
+                        "s": "157",
+                        "e": "157",
+                        "d": "0"
+                    },
+                    "fullcontact": {
+                        "s": "157",
+                        "e": "157",
+                        "d": "0"
+                    },
+                    "smtp": {
+                        "s": "157",
+                        "e": "0",
+                        "d": "-1"
+                    },
+                    "wait": {
+                        "s": "157",
+                        "e": "861",
+                        "d": "704"
+                    },
+                    "handleds": {
+                        "s": "861",
+                        "e": "861",
+                        "d": "0",
+                        "edbs": {
+                            "s": "861",
+                            "e": "861",
+                            "d": "0",
+                            "ename": {
+                                "s": "861",
+                                "e": "861",
+                                "d": "0"
+                            },
+                            "dsp": {
+                                "s": "861",
+                                "e": "861",
+                                "d": "0"
+                            },
+                            "si": {
+                                "s": "861",
+                                "e": "861",
+                                "d": "0"
+                            }
+                        }
+                    }
+                }
+            },
+            "generateresult": {
+                "s": "886",
+                "e": "886",
+                "d": "0"
+            },
+            "apibrdcst": {
+                "s": "887",
+                "e": "914",
+                "d": "27",
+                "sendqueryhistorymessage": {
+                    "s": "888",
+                    "e": "914",
+                    "d": "26"
+                }
+            }
+        },
+        "correlationid": "6cfbace6-636d-4a3e-b0de-98c119a755be",
+        "SLALog": true,
+        "dd_service": "email-risk-score",
+        "dd_version": "20211105.5",
+        "dd_env": "prod",
+        "dd_trace_id": "4811027978264585139",
+        "dd_span_id": "92304817485965703",
+        "RequestPath": "/",
+        "AvailabilityZone": "us-west-1a",
+        "InstanceId": "i-083bcab683a289261",
+        "InstanceIPAddresses": "10.70.10.100",
+        "EcsTaskId": "6093f103efa54540a73ab10b94aa4e2f"
+    },
+    "env": "prod",
+    "accountid": "786063409838",
+    "cluster": "emailage-ecs-email-risk-score",
+    "appname": "email-risk-score",
+    "darkenv": "false",
+    "ddsource": "aws-ecs-containers",
+    "service": "email-risk-score",
+    "hostname": "ip-10-70-10-100.us-west-1.compute.internal",
+    "tag": "786063409838.dkr.ecr.us-west-1.amazonaws.com/email-risk-score:20211105.5/ecs-email-risk-score-688-email-risk-score-eeaed1d6cacbd8d08b01/328776fafdc9",
+    "@timestamp": "2021-11-10T12:12:38.000Z"
+}
