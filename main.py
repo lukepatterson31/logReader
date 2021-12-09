@@ -1,11 +1,13 @@
+import json
+
 import pandas as pd
 
 
 class Node:
 
-    def __init__(self, n, data):
+    def __init__(self, n, value):
         self.children = [None] * n
-        self.data = data
+        self.value = value
 
 
 def in_order(self, node):
@@ -32,9 +34,10 @@ def panda_json(file):
 
 json_file = "data/sample-corr.json"
 
-if __name__ == '__main__':
-    for key in panda_json(json_file):
-        print(f"{key}")
 
-        value = panda_json(json_file)[key]
-        print(value)
+if __name__ == '__main__':
+    df = pd.read_json("data/sample-corr.json")
+    with open(json_file, 'r') as f:
+        data = json.loads(f.read())
+        df_nested = pd.json_normalize(data, max_level=7)
+    # print(df.info())
