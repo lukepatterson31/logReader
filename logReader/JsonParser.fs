@@ -15,10 +15,11 @@ type Node = {
 
 let jsonString = File.ReadAllText "../../../data/sample-corr.json"
 
+let deserializeJson (json: string): JsonObject = JsonSerializer.Deserialize<JsonObject> json
+
+let getNode (jsonObj: JsonNode, key: string) = jsonObj.Item key
 
 let getLogMessage (jsonStr: string) =
-    let deserializeJson (json: string): JsonObject = JsonSerializer.Deserialize<JsonObject> json
-    let getNode (jsonObj: JsonNode, key: string) = jsonObj.Item key
     let root = getNode(getNode(deserializeJson(jsonStr), "log"), "Message")
     root.AsObject()
     
@@ -43,6 +44,8 @@ let rec recursiveDescent (node: JsonNode) =
 let rec topLevelDescent (json: JsonObject) =
     for child in json do
         child.Value |> recursiveDescent
+
+let sla = (getNode (getNode(getNode(deserializeJson(jsonString), "log"), "Message"), "sla")).ToString() |> int
 
 // pass in string |> deserialize into json object at level we desire |> recursive descent of nodes
 jsonString |> getLogMessage |> topLevelDescent    
